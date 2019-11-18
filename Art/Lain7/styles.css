@@ -1,0 +1,42 @@
+
+html{
+}
+body{
+	background-color:#5EE7EE;
+}
+.animated-button{
+	animation-name:movement;
+	animation-duration:3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	text-align:center;
+	margin-top:400px;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+button{
+	width:20%;
+	margin-top:-15px;
+	margin-left:auto;
+	margin-right:auto;
+	animation-name:shadow;
+	animation-duration:3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	box-shadow: 0 15px 15px -6px #777;
+}
+@keyframes movement{
+	0%{transform: translateY(0px) rotate(5deg)}
+	50% {transform: translaeY(-17px) rotate(0deg)}
+	100%{transform:translateY(-35px) rotate(-5deg)}
+}
+
+@keyframes shadow{
+	0% {box-shadow: 0 15px 15px -6px #000;}
+	15% {box-shadow: 0 15px 15px -6px #404040;} 
+	50% {box-shadow: 0 15px 15px -6px #bfbfbf}
+	100% {box-shadow: 0 15px 15px -6px #5EE7EE;}
+}
